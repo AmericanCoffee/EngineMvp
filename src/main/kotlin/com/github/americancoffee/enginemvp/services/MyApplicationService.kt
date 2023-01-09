@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.americancoffee.enginemvp.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.americancoffee.enginemvp.MyBundle
 
 class MyApplicationService {
 
