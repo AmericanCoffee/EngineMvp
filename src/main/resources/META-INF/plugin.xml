@@ -1,18 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.americancoffee.enginemvp</id>
-    <name>IntelliJ Platform Plugin EngineMvp</name>
+    <id>com.github.americancoffee.enginemvp.noamrl</id>
+    <name>EngineMvp</name>
     <vendor>americancoffee</vendor>
 
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.americancoffee.enginemvp.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.americancoffee.enginemvp.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.engine.template.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.engine.template.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.americancoffee.enginemvp.listeners.MyProjectManagerListener"
+        <listener class="com.engine.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>

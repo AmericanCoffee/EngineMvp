@@ -1,6 +1,6 @@
-package com.github.americancoffee.enginemvp.services
+package com.engine.template.services
 
-import com.github.americancoffee.enginemvp.MyBundle
+import com.engine.template.MyBundle
 
 class MyApplicationService {
 

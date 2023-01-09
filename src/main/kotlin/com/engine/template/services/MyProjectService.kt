@@ -1,7 +1,7 @@
-package com.github.americancoffee.enginemvp.services
+package com.engine.template.services
 
+import com.engine.template.MyBundle
 import com.intellij.openapi.project.Project
-import com.github.americancoffee.enginemvp.MyBundle
 
 class MyProjectService(project: Project) {
 
